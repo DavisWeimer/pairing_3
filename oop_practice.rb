@@ -1,9 +1,9 @@
 class Person
     attr_reader :name, :age, :language
-    def initialize(name, age)
+    def initialize(name, age, language = "English")
         @name = name
         @age = age
-        @language = "english"
+        @language = language
 
 
     end
@@ -22,7 +22,7 @@ person1.celebrate_birthday
 
 p person1.age
 
-person2 = Person.new("Seth", 22)
+person2 = Person.new("Seth", 22, "Spanish")
 
 p person2
 
